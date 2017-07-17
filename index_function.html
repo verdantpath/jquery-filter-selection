@@ -20,7 +20,7 @@
 <script type="text/JavaScript">
   //alerts 4 left in the set
   alert(jQuery('a')
-    .filter(function(index) {
+    .filter(function(index) { // pass a parameter of index if you want to rerence any item by index number
       return $(this).hasClass('external');
     })
     .length + ' external links'); //keeps  the links with a class of filter in the selection (doesn't affect what is written to the page)
